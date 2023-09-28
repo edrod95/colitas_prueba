@@ -1,0 +1,49 @@
+<div class="fondo">
+    <div class="surface-card p-4 shadow-2 border-round w-full lg:w-3 h-screen background-coñ"
+        [style]="{'display': 'flex', 'flex-direction': 'column'}">
+        <div class="text-center mb-3 justify-content-center align-content-center" >
+            <img src="assets/demo/images/ed5f3a15d92ba3ac6238a98da42bb01e.jpg" alt="Image" height="300"  class="mb-1">
+            <div class="text-900 text-3xl font-medium mb-3"><h1>Iniciar Sesión</h1></div>
+        </div>
+
+        <div>
+
+            <label for="email1" class="block text-900 font-medium mb-2 ">Email</label>
+            <span class="p-input-icon-left w-full mb-3">
+                <i class="pi pi-at"></i>
+                <input type="email" pInputText class="w-full" />
+            </span>
+            <label for="password" class="block text-900 font-medium mb-2 ">Contraseña</label>
+            <span class="p-input-icon-left w-full mb-3">
+                <i class="pi pi-unlock"></i>
+                <input type="password" pInputText class="w-full" />
+            </span>
+            
+            <div class="flex align-items-center justify-content-between mb-4">
+                <div class="flex align-items-center">
+                    <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox>
+                    <label for="rememberme1">Recordar Contraseña</label>
+                </div>
+                <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">¿Olvidaste la
+                    contraseña?</a>
+                </div>
+                
+                <button pButton pRipple label="Ingresar" class="w-full"></button>
+                <div class="flex align-items-center justify-content-rigth mt-2">
+                    <div class="flex align-items-center">
+                        <label for="rememberme1">¿Aún no tienes una cuenta?</label>
+                    </div>
+                    <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer" (click)="router.navigate(['/auth/registro'])">Registrarse
+                        <i class="pi pi-external-link" [style]="{'font-size': '10px', 'margin-left': '1px'}"></i>
+                    </a>
+                    
+            </div>
+
+            <!-- <span class="text-600 font-medium line-height-3">¿Aun no posees una cuenta?</span> -->
+            <!-- <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer"
+                herf="/src/app/colitas/modules/components/registro/registro.html">¡Creala el día de HOY!</a> -->
+            
+        </div>
+    </div>
+
+</div>
